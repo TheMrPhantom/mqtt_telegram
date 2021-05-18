@@ -1,0 +1,9 @@
+services:
+  mqttTelegram:
+    image: mqtt-telegram
+    environment:
+      - TOKEN=1721102011:AAHYzFr1tynW_TwGOxrxLr4k8fduuRw7K-A
+      - CHAT_ID=500012096
+      - MQTT_BROKER_ADRESS=fius-hawkeye
+      - TOPIC=impf/appointment
+    restart:  on-failure
